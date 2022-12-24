@@ -45,8 +45,6 @@ btnDark.addEventListener("click", () => {
     : localStorage.removeItem("dark");
 });
 
-// Log in And Sign In
-
 // Random Border Color
 let character = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let mainH2 = document.querySelectorAll(".main-page h2");

@@ -605,7 +605,7 @@ li {
     font-size: 22px;
   }
 }
-@media (max-width: 454px) {
+@media (max-width: 468px) {
   .main-page h2 {
     font-size: 18px;
   }
@@ -615,7 +615,7 @@ li {
     font-size: 16px;
   }
 }
-@media (max-width: 396px) {
+@media (max-width: 412px) {
   .main-page h2 {
     font-size: 16px;
   }
@@ -642,6 +642,7 @@ li {
   width: fit-content;
   color: var(--black-color);
   font-size: 18px;
+  text-align: center;
 }
 .choose .info {
   display: flex;
@@ -707,5 +708,11 @@ li {
 }
 .choose.css .info a.coolBeans::after {
   background-color: #007dc6;
+}
+.choose.js .info a {
+  color: #f58233;
+}
+.choose.js .info a.coolBeans::after {
+  background-color: #f58233;
 }
 /* End Choose Html */
