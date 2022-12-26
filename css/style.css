@@ -9,6 +9,7 @@
   --black-color: black;
   --icon-color: #e5e5e5;
   --shadow-color: #ddd;
+  --shadow-color-2: rgba(0, 0, 0, 0.3294117647);
   --purple-alt-color: #f1f5f9;
   --title-color: #00eeff;
   --exam-color: var(--icon-color);
@@ -36,6 +37,7 @@ body.dark-theme {
   --black-color: white;
   --icon-color: #939393;
   --shadow-color: rgb(0 0 0 / 50%);
+  --shadow-color-2: rgba(0, 0, 0, 0.5294117647);
   --purple-alt-color: #3f51b5;
   --title-color: white;
   --exam-color: rgba(255, 255, 255, 0.07);
@@ -561,6 +563,7 @@ li {
   width: 38%;
   border-radius: 8px;
   height: fit-content;
+  filter: drop-shadow(35px 10px 20px rgba(0, 0, 0, 0.5294117647));
 }
 .learn-web .info {
   display: flex;
@@ -670,12 +673,11 @@ li {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  filter: drop-shadow(35px 10px 20px rgba(0, 0, 0, 0.5294117647));
 }
 .choose .choose-img img {
   max-width: 250px;
   margin: auto;
-  filter: drop-shadow(35px 10px 20px rgba(0, 0, 0, 0.5294117647));
+  filter: drop-shadow(35px 10px 20px var(--shadow-color-2));
 }
 .choose .choose-img p {
   width: fit-content;
