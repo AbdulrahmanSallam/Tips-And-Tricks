@@ -48,6 +48,7 @@ btnDark.addEventListener("click", () => {
 // Random Border Color
 let character = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let mainH2 = document.querySelectorAll(".main-page h2");
+let boxNumbers = document.querySelectorAll(".meta-html .box span");
 
 setInterval(() => {
   let color = "#";
@@ -57,16 +58,8 @@ setInterval(() => {
   mainH2.forEach((ele) => {
     ele.style.borderColor = `${color} transparent`;
   });
-}, 1000);
 
-// let object = { a: 1, b: 9, c: 3 };
-// let max = object["a"]; // first object value
-// let maxProp = "a";
-// let obj = {};
-// for (const prop in object) {
-//   if (object[prop] > max) {
-//     max = object[prop];
-//     maxProp = prop;
-//   }
-// }
-// obj[maxProp] = max;
+  boxNumbers.forEach((ele) => {
+    ele.style.color = color;
+  });
+}, 1000);
