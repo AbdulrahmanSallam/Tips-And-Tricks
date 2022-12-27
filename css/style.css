@@ -806,17 +806,17 @@ li {
   font-size: 30px;
 }
 /* End Html page */
-.keywords .info {
+.info {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-.keywords .info iframe {
+.info iframe {
   transform: translateY(100%) !important;
 }
 .keywords-h1 {
   animation: control-width-3 5s 1s steps(20) infinite both,
-    blink 0.5s 1s infinite;
+    blink 0.5s 1s infinite !important;
 }
 @keyframes control-width-3 {
   0% {
@@ -861,6 +861,51 @@ li {
   }
   50% {
     width: 233px;
+  }
+  100% {
+    width: 0;
+  }
+}
+.topic-h1 {
+  animation: control-width-6 4s 1s steps(15) infinite both,
+    blink 0.5s 1s infinite !important;
+}
+@keyframes control-width-6 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 203px;
+  }
+  100% {
+    width: 0;
+  }
+}
+.type-h1 {
+  animation: control-width-7 4s 1s steps(15) infinite both,
+    blink 0.5s 1s infinite !important;
+}
+@keyframes control-width-7 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 197px;
+  }
+  100% {
+    width: 0;
+  }
+}
+.tapColor-h1 {
+  animation: control-width-8 5s 1s steps(20) infinite both,
+    blink 0.5s 1s infinite !important;
+}
+@keyframes control-width-8 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 251px;
   }
   100% {
     width: 0;
