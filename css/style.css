@@ -688,8 +688,8 @@ li {
 .choose .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   font-size: 22px;
+  gap: 15px;
 }
 .choose .info a {
   padding: 10px 12px;
