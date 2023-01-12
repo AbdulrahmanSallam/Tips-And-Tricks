@@ -900,12 +900,27 @@ li {
   animation: control-width-8 5s 1s steps(20) infinite both,
     blink 0.5s 1s infinite !important;
 }
-@keyframes control-width-9 {
+@keyframes control-width-8 {
   0% {
     width: 0;
   }
   50% {
     width: 251px;
+  }
+  100% {
+    width: 0;
+  }
+}
+.DatetimeLocal-h1 {
+  animation: control-width-9 5s 1s steps(20) infinite both,
+    blink 0.5s 1s infinite !important;
+}
+@keyframes control-width-9 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 323px;
   }
   100% {
     width: 0;
