@@ -48,7 +48,7 @@ btnDark.addEventListener("click", () => {
 // Random Border Color
 let character = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let mainH2 = document.querySelectorAll(".main-page h2");
-let boxNumbers = document.querySelectorAll(".meta-html .box span");
+let boxNumbers = document.querySelectorAll(".all-html .box span");
 
 setInterval(() => {
   let color = "#";
@@ -64,24 +64,9 @@ setInterval(() => {
   });
 }, 1000);
 
-class CommonDatatypes {
-  check(arr) {
-    let obj = {};
-    for (let i = 0; i < arr.length; i++) {
-      typeof arr[i] in obj
-        ? (obj[typeof arr[i]] += 1)
-        : (obj[typeof arr[i]] = 1);
-    }
-    let max = obj[Object.keys(obj)[0]];
-    let maxProp = Object.keys(obj)[0];
-    for (const prop in obj) {
-      if (obj[prop] > max) {
-        max = obj[prop];
-        maxProp = prop;
-      }
-    }
-    return maxProp;
-  }
-}
-let commonDatatypes = new CommonDatatypes();
-console.log(commonDatatypes.check(["1", "2", 2]));
+let iconLink = document.createElement("link");
+
+iconLink.setAttribute("rel", "shortcut icon");
+iconLink.setAttribute("href", "../imgs/logo.png");
+
+document.querySelector(`head`).append(iconLink);
